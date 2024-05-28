@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Soda Pop</title>
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="/Joy Bubble Menu/menu.css">
+
+    <!--JQuery JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <!-- Hamburger Menu -->
+        <div class="hamburger-container">
+            <!-- JoyBubble Logo -->
+            <div class="logo">
+                <a href="/index.html"><img src="/img/circlelogo.png" alt="JoyBubble Logo"></a>
+            </div>
+            <!-- Hamburger Menu Logo -->
+            <button class="hamburger" id="hamburger">&#9776;</button>
+        </div>
+        <!-- Navigation Bar Container -->
+        <div class="navbar-container" id="navbarContainer">
+            <!-- Navigation Bar JoyBubble Logo -->
+            <div class="logo">
+                <a href="/index.html"><img src="/img/circlelogo.png" alt="JoyBubble Logo"></a>
+            </div>
+            <!-- Left Arrow -->
+            <button class="nav-arrow left-arrow" id="leftArrow">
+                <img src="/img/arrow/left-arrow.png" alt="Left Arrow">
+            </button>
+            <!-- Nav Bar Links -->
+            <div class="navbar" id="navbar">
+                <a href="/Joy Bubble Menu/milk-tea.html" class="nav-item">Milk Tea</a>
+                <a href="/Joy Bubble Menu/smoothies.html" class="nav-item">Smoothies</a>
+                <a href="/Joy Bubble Menu/bakery-products.html" class="nav-item">Bakery Products</a>
+                <a href="/Joy Bubble Menu/waffles.html" class="nav-item">Waffles</a>
+                <a href="/Joy Bubble Menu/korean-chicken.html" class="nav-item">Korean Chicken</a>
+                <a href="/Joy Bubble Menu/bubble-sodapop.html" class="nav-item currentPath">Bubble Soda Pop</a>
+                <a href="/Joy Bubble Menu/korean-corndog.html" class="nav-item">Korean Corn Dog</a>
+                <a href="/Joy Bubble Menu/pasta.html" class="nav-item">Pasta</a>
+                <a href="/Joy Bubble Menu/eggdrop-sandwiches.html" class="nav-item">Egg Drop Sandwiches</a>
+                <a href="/Joy Bubble Menu/tteokbokki.html" class="nav-item">Tteokbokki</a>
+                <a href="/Joy Bubble Menu/donuts.html" class="nav-item">Donuts</a>
+                <a href="/Joy Bubble Menu/glitter-tea-series.html" class="nav-item">Glitter Tea Series</a>
+            </div>
+            <!-- Right Arrow -->
+            <button class="nav-arrow right-arrow" id="rightArrow">
+                <img src="/img/arrow/right-arrow.png" alt="Right Arrow">
+            </button>
+        </div>
+    </header>
+
+    <!--Bubble Soda Pop Products-->
+    <section id="products" class="bsp-products">
+        <div class="product-container">
+            <!--Coffee Soda Pop-->
+            <div class="pd">
+                <div class="pd-image">
+                    <img src="/img/Menu Products/bubble soda pop/coffee-sodapop.png" alt="Coffee Soda Pop" draggable="false">
+                </div>
+                <div class="pd-info">
+                    <h3>Coffee Soda Pop</h3>
+                    <p class="price">20.00 AED - 24.00 AED</p>
+                </div>
+            </div>
+
+            <!--Bubble Soda Pop-->
+            <div class="pd">
+                <div class="pd-image">
+                    <img src="/img/Menu Products/bubble soda pop/bubble-sodapop.png" alt="Bubble Soda Pop" draggable="false">
+                </div>
+                <div class="pd-info">
+                    <h3>Bubble Soda Pop</h3>
+                    <p class="price">20.00 AED - 24.00 AED</p>
+                </div>
+            </div>
+
+            <!--Mango Passion Soda Pop-->
+            <div class="pd">
+                <div class="pd-image">
+                    <img src="/img/Menu Products/bubble soda pop/mango-passion-sodapop.png" alt="Mango Passion Soda Pop" draggable="false">
+                </div>
+                <div class="pd-info">
+                    <h3>Mango Passion Soda Pop</h3>
+                    <p class="price">20.00 AED - 24.00 AED</p>
+                </div>
+            </div>
+
+            <!--Riptide Soda Pop-->
+            <div class="pd">
+                <div class="pd-image">
+                    <img src="/img/Menu Products/bubble soda pop/riptide-sodapop.png" alt="Riptide Soda Pop" draggable="false">
+                </div>
+                <div class="pd-info">
+                    <h3>Riptide Soda Pop</h3>
+                    <p class="price">20.00 AED - 24.00 AED</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Back-to-Top Scroll Button-->
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
+
+    <!--Custom JS-->
+    <script src="/Joy Bubble Menu/menu.js"></script>
+</body>
+</html>
