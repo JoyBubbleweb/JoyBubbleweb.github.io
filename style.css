@@ -212,7 +212,7 @@ nav svg {
   position: absolute;
   top: 93%;
   left: 27%;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
 }
 
 /* Order Now Button Style */
@@ -1438,10 +1438,10 @@ footer a {
     letter-spacing: 5px;
   }
 
-  /* .ordernow-button {
+  .ordernow-button {
     top: 38%;
     left: 36%;
-  } */
+  }
 
   .aboutus-container {
     margin: 6rem 1rem;
