@@ -1438,10 +1438,10 @@ footer a {
     letter-spacing: 5px;
   }
 
-  .ordernow-button {
+  /* .ordernow-button {
     top: 38%;
     left: 36%;
-  }
+  } */
 
   .aboutus-container {
     margin: 6rem 1rem;
@@ -1498,7 +1498,7 @@ footer a {
 @media (max-width: 321px) {
   /* Order Now */
   .ordernow-button {
-    top: 120%;
+    top: 90%;
     left: 27%;
   }
 
