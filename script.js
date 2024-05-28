@@ -123,3 +123,28 @@ $(document).ready(function(){
         return false; 
     }); 
 });
+
+
+// --Pop-Up-Ad---
+// Get the popup
+var popup = document.getElementById("popup");
+
+// Get the <span> element that closes the popup
+var close = document.getElementById("close");
+
+// When the user opens the page, display the popup
+window.onload = function () {
+    popup.style.display = "flex";
+}
+
+// When the user clicks on <span> (x), close the popup
+close.onclick = function () {
+    popup.style.display = "none";
+}
+
+// Optional: Close the popup when the user clicks outside of the popup
+window.onclick = function (event) {
+    if (event.target == popup) {
+        popup.style.display = "none";
+    }
+}
