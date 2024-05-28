@@ -1511,11 +1511,11 @@ footer a {
     padding: 5px 25px;
     letter-spacing: 5px;
   }
-
+/* 
   .ordernow-button {
     top: 33%;
     left: 36%;
-  }
+  } */
 
   .aboutus-image {
     content: url('/img/aboutus/aboutus-image3.png');
