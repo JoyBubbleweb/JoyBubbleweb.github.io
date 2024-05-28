@@ -212,7 +212,7 @@ nav svg {
   position: absolute;
   top: 93%;
   left: 27%;
-  transform: translate(-50%, -50%);
+  /*transform: translate(-50%, -50%);*/
 }
 
 /* Order Now Button Style */
@@ -411,118 +411,21 @@ nav svg {
 /* Why JoyBubble Section */
 .whyjb-section {
   height: 100vh;
-  position: relative;
   overflow: hidden;
-  position: relative;
+}
+
+.whyjb-img {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.whyjb-elements {
-  overflow-x: hidden;
-  overflow-x: clip !important;
-}
-
-/* Why JoyBubble Image Elements */
-.leaf-left,
-.leaf-right,
-.beans-left,
-.beans-right {
-  position: absolute;
-  z-index: 10;
-}
-
-/* Why JoyBubble Elements Size */
-.leaf-left,
-.leaf-right {
-  max-width: 25%;
-}
-
-.beans-left,
-.beans-right {
-  max-height: 28%;
-}
-
-/* Why JoyBubble Elements Position */
-.leaf-left {
-  top: -9%;
-  left: -1%;
-}
-
-.leaf-right {
-  bottom: 3%;
-  right: -1%;
-}
-
-.beans-left {
-  bottom: 3%;
-  left: 2%;
-}
-
-.beans-right {
-  top: 3%;
-  right: 3.5%;
-}
-
-/* Why JoyBubble Card */
-.whyjb-card {
-  z-index: 0;
-  background-color: #fcfcfc;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.318);
-  border-radius: 10px;
-  height: 72vh;
-  width: 173vh;
-  display: grid;
-  grid-template-columns: 2fr 1.7fr .2fr;
-  overflow: hidden;
-}
-
-/* Why JoyBubble Text */
-.whyjb-text {
-  padding: 4rem 5rem 3rem 8.5rem;
-}
-
-/* Why JoyBubble Heading */
-.whyjb-text h2 {
-  color: #263D90;
-  font-size: 3rem;
-  font-weight: 500;
-  font-family: var(--main-font);
-  text-transform: uppercase;
-}
-
-/* Why JoyBubble Lines */
-.whyjb-text .line-1 {
-  background-color: var(--color-2);
-  width: 35%;
-  height: 3px;
-  border-radius: 5px;
-  margin-top: .5rem;
-  margin-bottom: 1.8rem;
-}
-
-/* Why JoyBubble Parargraph */
-.whyjb-text p {
-  font-family: var(--paragraph-font);
-  font-size: 1.4rem;
-  text-align: justify;
-  text-justify: inter-word;
-}
-
 /* Why JoyBubble Image */
-.whyjb-image img {
+.whyjb-img img {
   display: block;
   max-width: 100%;
   max-height: 100%;
 }
-
-/* Why JoyBubble Empty Space */
-.whyjb-empty {
-  background-color: var(--color-3);
-}
-
-
 
 /* --2nd Half General Styling -- */
 section h1,
@@ -1013,55 +916,8 @@ footer a {
     font-size: 1rem;
   }
 
-  .whyjb-section {
-    height: 70vh;
-  }
-
-  .leaf-left,
-  .leaf-right {
-    max-width: 20%;
-  }
-
-  .beans-left,
-  .beans-right {
-    max-height: 25%;
-  }
-
-  .leaf-left {
-    top: -15%;
-    left: 3%;
-  }
-
-  .leaf-right {
-    bottom: -1%;
-    right: 6%;
-  }
-
-  .beans-left {
-    bottom: -1%;
-    left: 6%;
-  }
-
-  .beans-right {
-    top: -1%;
-    right: 7%;
-  }
-
-  .whyjb-card {
-    height: 57vh;
-    width: 130vh;
-  }
-
-  .whyjb-text {
-    padding: 2rem 2rem 2rem 4rem;
-  }
-
-  .whyjb-text h2 {
-    font-size: 2rem;
-  }
-
-  .whyjb-text p {
-    font-size: 1rem;
+  .whyjb-img img {
+    max-width: 90%;
   }
 }
 
@@ -1141,51 +997,9 @@ footer a {
     font-size: 1rem;
   }
 
-  .beans-left,
-  .beans-right {
-    max-height: 20%;
-  }
-
-  .leaf-left {
-    top: -10%;
-    left: 1%;
-  }
-
-  .leaf-right {
-    bottom: -1%;
-    right: 3%;
-  }
-
-  .beans-left {
-    bottom: -1%;
-    left: 6%;
-  }
-
-  .beans-right {
-    top: -1%;
-    right: 4%;
-  }
-
-  .whyjb-card {
-    height: 60vh;
-    width: 105vh;
-  }
-
-  .whyjb-text {
-    padding: 3rem;
-  }
-
-  .whyjb-text h2 {
-    font-size: 2rem;
-  }
-
-  .whyjb-text p {
-    font-family: "Roboto", sans-serif;
-    font-size: .9rem;
-  }
-
-  .whyjb-image img {
-    max-width: 130%;
+  .whyjb-img img {
+    content: url('/img/whyjoybubble/whyjb-tablet.png');
+    max-width: 90%;
   }
 
 }
@@ -1218,7 +1032,7 @@ footer a {
 
   header {
     height: 70vh;
-    background-image: url('/img/splashpage/splashpage_2.png');
+    background-image: url('/img/splashpage/splashscreen-mobile.png');
   }
 
   .logo {
@@ -1377,52 +1191,12 @@ footer a {
   }
 
   .whyjb-section {
-    height: 100vh;
+    height: 80vh;
   }
 
-  .leaf-left,
-  .leaf-right {
-    max-width: 35%;
-  }
-
-  .beans-left,
-  .beans-right {
-    max-height: 15%;
-  }
-
-  .leaf-left {
-    top: -7%;
-    left: -3%;
-  }
-
-  .leaf-right {
-    bottom: 1%;
-    right: -2%;
-  }
-
-  .beans-left {
-    bottom: 1%;
-    left: 6%;
-  }
-
-  .beans-right {
-    top: -1%;
-    right: 1%;
-  }
-
-  .whyjb-card {
-    height: 89vh;
-    width: 55vh;
-    grid-template-columns: none;
-    grid-template-rows: 1fr .1fr .1fr;
-  }
-
-  .whyjb-text {
-    padding: 2.5rem;
-  }
-
-  .whyjb-image img {
-    content: url('/img/whyjoybubble/whyjoybubble-2.png');
+  .whyjb-img img {
+    content: url('/img/whyjoybubble/whyjb-phone.png');
+    max-width: 80%;
   }
 }
 
@@ -1438,10 +1212,10 @@ footer a {
     letter-spacing: 5px;
   }
 
-  .ordernow-button {
+  /* .ordernow-button {
     top: 38%;
     left: 36%;
-  }
+  } */
 
   .aboutus-container {
     margin: 6rem 1rem;
@@ -1465,43 +1239,16 @@ footer a {
     padding: 2rem 0;
   }
 
-  .whyjb-card {
-    height: 92vh;
-    width: 50vh;
-    grid-template-rows: 1fr .1fr 11fr;
-  }
-
-  .whyjb-text {
-    padding: 2.5rem;
-  }
-
-  .whyjb-text h2 {
-    font-size: 2rem;
-  }
-
-  .whyjb-text .line-1 {
-    margin-top: .5rem;
-    margin-bottom: 1.3rem;
-  }
-
-  .whyjb-text p {
-    font-family: "Roboto", sans-serif;
-    font-size: .9rem;
-  }
-
-  .whyjb-image img {
-    content: url('/img/whyjoybubble/whyjoybubble-2.png');
-  }
 }
 
 /* Screen 321px */
 @media (max-width: 321px) {
+
   /* Order Now */
   .ordernow-button {
-    top: 100%;
+    top: 90%;
     left: 27%;
   }
-  
 
   header {
     height: 55vh;
@@ -1511,11 +1258,6 @@ footer a {
     font-size: 1rem;
     padding: 5px 25px;
     letter-spacing: 5px;
-  }
-
-  .ordernow-button {
-    top: 33%;
-    left: 36%;
   }
 
   .aboutus-image {
@@ -1592,70 +1334,6 @@ footer a {
   .mission-content p,
   .vision-content p {
     font-size: .5rem;
-  }
-
-
-  .leaf-left,
-  .leaf-right {
-    max-width: 30%;
-  }
-
-  .beans-left,
-  .beans-right {
-    max-height: 13%;
-  }
-
-  .leaf-left {
-    top: 5%;
-    left: -2%;
-  }
-
-  .leaf-right {
-    bottom: 10%;
-    right: 1%;
-  }
-
-  .beans-left {
-    bottom: 7%;
-    left: 6%;
-  }
-
-  .beans-right {
-    top: 8%;
-    right: 4%;
-  }
-
-  .whyjb-card {
-    height: 89vh;
-    width: 55vh;
-    grid-template-columns: none;
-    grid-template-rows: 1fr .1fr .1fr;
-  }
-
-  .whyjb-text {
-    padding: 2.5rem;
-  }
-
-  .whyjb-card {
-    height: 74vh;
-    width: 40vh;
-    grid-template-rows: .1fr .1fr 1fr;
-  }
-
-  .whyjb-text {
-    padding: 2rem;
-  }
-
-  .whyjb-text h2 {
-    font-size: 1.4rem;
-  }
-
-  .whyjb-text p {
-    font-size: .7rem;
-  }
-
-  .whyjb-image img {
-    content: url('/img/whyjoybubble/whyjoybubble-2.png');
   }
 }
 
@@ -1766,7 +1444,7 @@ footer a {
   }
 
   section p {
-      font-size: 0.9rem;
+    font-size: 0.9rem;
   }
 
   .pd-name {
@@ -1774,7 +1452,7 @@ footer a {
   }
 
   .model-titles {
-      font-size: 1.6rem;
+    font-size: 1.6rem;
   }
 
   .info {
@@ -1838,7 +1516,7 @@ footer a {
   .links-socialmedia i {
     font-size: 1.3rem;
   }
-  
+
   .links-company-info i {
     font-size: 1.1rem;
   }
