@@ -1498,10 +1498,9 @@ footer a {
 @media (max-width: 321px) {
   /* Order Now */
   .ordernow-button {
-    top: 100%;
+    top: 120%;
     left: 27%;
   }
-  
 
   header {
     height: 55vh;
