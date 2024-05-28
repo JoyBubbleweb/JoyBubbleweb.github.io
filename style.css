@@ -1,0 +1,1089 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* Variables */
+:root {
+  --color-1: #FF9D01;
+  --color-2: #FFB33A;
+  --color-3: #48A000;
+  --text-color: #323232;
+  --accent-color: #1a39a9;
+  --main-font: "Oswald", sans-serif;
+  --paragraph-font: "Roboto", sans-serif;
+}
+
+/* body */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 12pt;
+  font-family: "Oswald", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-x: clip !important;
+}
+/* Splash Screen - Header */
+header {
+  background-image: url('/img/splashpage/splashpage_1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 135vh;
+}
+/* Navigation Bar */
+.navigation {
+  max-width: 68rem;
+  margin: 0 auto;
+}
+/* Nav */
+nav {
+  height: 5.5rem;
+  background-color: var(--color-1);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Logo - Image */
+.logo {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+/* Logo Image Settings */
+.logo img {
+  width: 145px;
+  height: auto;
+}
+
+/* Naviagtion Bar Links */
+.links-container {
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-evenly;
+  /* Space the links evenly */
+  align-items: center;
+}
+/* Naviagtion Bar layout */
+nav a {
+  height: 100%;
+  padding: 0 80px;
+  display: flex;
+  justify-content: center;
+  /* Center text within each link */
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: transform .2s;
+}
+/* Naviagtion Bar Links Hover*/
+nav a:hover{
+  color: var(--accent-color);
+  transform: scale(1.1);
+}
+nav svg {
+  fill: var(--text-color);
+}
+
+/* Naviagtion Bar Hamburger menu */
+#sidebar-active {
+  display: none;
+}
+/* Naviagtion Bar Hamburger Icon */
+.open-sidebar-button,
+.close-sidebar-button {
+  display: none;
+}
+
+/* Order Now Button */
+.ordernow-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 93%;
+  left: 27%;
+  transform: translate(-50%, -50%);
+}
+/* Order Now Button Style */
+.btn-on {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: var(--color-3);
+  border: none;
+  font-weight: 100;
+  font-family: "League Gothic", sans-serif;
+  letter-spacing: 10px;
+  font-size: 2rem;
+  padding: 10px 45px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+/* Order Now Button Hover */
+.btn-on:hover {
+  background-color: #FFFFFF;
+  color: var(--color-3);
+  border: 5px solid var(--color-3);
+}
+
+/* Lines */
+.line-1,
+.line-2 {
+  width: 15%;
+  height: 8px;
+}
+
+/* Arrow Position */
+.arrow {
+  display: flex;
+  /* Use flexbox */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+}
+
+/* About Us Section*/
+.aboutus-section {
+  background-image: url('/img/aboutus/aboutuspage.png');
+  height: 90vh;
+}
+/* About Us Container */
+.aboutus-container {
+  margin: 6rem 21rem;
+  display: inline-block;
+}
+/* About Us Card */
+.aboutus-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 30px 45px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.318);
+}
+/* About Us Text */
+.aboutus-text h2 {
+  text-transform: uppercase;
+  color: #263D90;
+  font-size: 3rem;
+  padding: 1rem 0;
+}
+.aboutus-text p {
+  font-family: var(--paragraph-font);
+  font-size: 1.4rem;
+  padding: 2rem 0;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.aboutus-text .line-1 {
+  background-color: var(--color-1);
+  border-radius: 50px;
+  width: 37%;
+  height: 3px;
+}
+/* About Us - Arrow */
+.arrow img {
+  height: auto;
+  width: 4rem;
+}
+/* About Us Image */
+.aboutus-image img {
+  height: auto;
+  width: 20rem;
+}
+/* Mission & Vission */
+.mission-vision-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+  margin: 0 auto;
+}
+/* Mission & Vission Title */
+.mission-vision-title {
+  grid-column: 1 / 2;
+}
+.mission-vision-title h1 {
+  font-size: 5rem;
+  font-family: var(--main-font);
+  font-weight: 400;
+  display: column;
+  text-align: left;
+  padding: 5rem 9rem;
+}
+/* Mission & Vission Line */
+.line-1,
+.line-2 {
+  width: 45%;
+  height: 8px;
+}
+.mission-vision-title .line-1 {
+  background-color: var(--color-1);
+}
+.mission-vision-title .line-2 {
+  margin-top: 5px;
+  background-color: #263D90;
+}
+/* Mission & Vission Content */
+.mission-content,
+.vision-content {
+  padding: 60px 90px;
+}
+/* Mission Section */
+.mission {
+  margin-top: 9rem;
+  grid-column: 2 / 3;
+  border-top-left-radius: 155px;
+  border-bottom-left-radius: 155px;
+  background-color: var(--color-2);
+  width: 100%;
+  height: 65%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.318);
+}
+/* Mission Heading */
+.mission-content h2 {
+  font-size: 3rem;
+  color: #263D90;
+}
+/* Mission Paragraph */
+.mission-content p {
+  color: white;
+  font-family: var(--paragraph-font);
+  font-size: 1.5rem;
+  text-align: right;
+}
+/* Vission Section */
+.vision {
+  background-color: #4057A9;
+  grid-column: 1 / 3;
+  /* Align with the right edge */
+  border-top-right-radius: 155px;
+  border-bottom-right-radius: 155px;
+  width: 50%;
+  height: 65%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.318);
+}
+/* Vission Heading */
+.vision-content h2 {
+  font-size: 3rem;
+  color: var(--color-2);
+  text-align: right;
+}
+/* Vission Paragraph */
+.vision-content p {
+  color: white;
+  font-family: var(--paragraph-font);
+  font-size: 1.5rem;
+}
+
+/* Why JoyBubble Section */
+.whyjb-section {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whyjb-elements{
+  overflow-x: hidden;
+  overflow-x: clip !important;
+}
+/* Why JoyBubble Image Elements */
+.leaf-left,
+.leaf-right,
+.beans-left,
+.beans-right {
+  position: absolute;
+  z-index: 10;
+}
+/* Why JoyBubble Elements Size */
+.leaf-left,
+.leaf-right {
+  max-width: 25%;
+}
+.beans-left,
+.beans-right {
+  max-height: 28%;
+}
+/* Why JoyBubble Elements Position */
+.leaf-left {
+  top: -9%;
+  left: -1%;
+}
+.leaf-right {
+  bottom: 3%;
+  right: -1%;
+}
+.beans-left {
+  bottom: 3%;
+  left: 2%;
+}
+.beans-right {
+  top: 3%;
+  right: 3.5%;
+}
+
+/* Why JoyBubble Card */
+.whyjb-card {
+  z-index: 0;
+  background-color: #fcfcfc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.318);
+  border-radius: 10px;
+  height: 72vh;
+  width: 173vh;
+  display: grid;
+  grid-template-columns: 2fr 1.7fr .2fr;
+  overflow: hidden;
+}
+/* Why JoyBubble Text */
+.whyjb-text {
+  padding: 4rem 5rem 3rem 8.5rem;
+}
+/* Why JoyBubble Heading */
+.whyjb-text h2 {
+  color: #263D90;
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: var(--main-font);
+  text-transform: uppercase;
+}
+/* Why JoyBubble Lines */
+.whyjb-text .line-1 {
+  background-color: var(--color-2);
+  width: 35%;
+  height: 3px;
+  border-radius: 5px;
+  margin-top: .5rem;
+  margin-bottom: 1.8rem;
+}
+/* Why JoyBubble Parargraph */
+.whyjb-text p {
+  font-family: var(--paragraph-font);
+  font-size: 1.4rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+/* Why JoyBubble Image */
+.whyjb-image img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+/* Why JoyBubble Empty Space */
+.whyjb-empty {
+  background-color: var(--color-3);
+}
+
+/* Responsive Screen */
+/* Screen 1024px */
+@media screen and (max-width: 1025px) {
+  header {
+    height: 110vh;
+  }
+
+  .navigation {
+    max-width: 50rem;
+  }
+
+  .logo img {
+    width: 130px;
+  }
+
+  nav a {
+    font-size: 1.3rem;
+    padding: 0 55px;
+  }
+
+  .ordernow-button {
+    top: 76%;
+    left: 30%;
+  }
+
+  .aboutus-container {
+    margin: 6rem 13rem;
+  }
+
+  .aboutus-image img {
+    width: 15rem;
+  }
+
+  .aboutus-text h2 {
+    font-size: 2rem;
+  }
+
+  .aboutus-text p {
+    font-size: 1rem;
+    padding: 2rem 0;
+  }
+
+  .mission-vision-title h1 {
+    font-size: 4rem;
+    padding: 5rem 6rem;
+  }
+
+  .mission,
+  .vision {
+    height: 55%;
+  }
+
+  .mission-content,
+  .vision-content {
+    padding: 60px 80px;
+  }
+
+  .mission-content h2,
+  .vision-content h2 {
+    font-size: 2rem;
+  }
+
+  .mission-content p,
+  .vision-content p {
+    font-size: 1rem;
+  }
+
+  .whyjb-section{
+    height: 70vh;
+  }
+
+  .leaf-left,
+  .leaf-right {
+    max-width: 20%;
+  }
+
+  .beans-left,
+  .beans-right {
+    max-height: 25%;
+  }
+
+  .leaf-left {
+    top: -15%;
+    left: 3%;
+  }
+
+  .leaf-right {
+    bottom: -1%;
+    right: 6%;
+  }
+
+  .beans-left {
+    bottom: -1%;
+    left: 6%;
+  }
+
+  .beans-right {
+    top: -1%;
+    right: 7%;
+  }
+
+  .whyjb-card {
+    height: 57vh;
+    width: 130vh;
+  }
+
+  .whyjb-text {
+    padding: 2rem 2rem 2rem 4rem;
+  }
+
+  .whyjb-text h2 {
+    font-size: 2rem;
+  }
+
+  .whyjb-text p {
+    font-size: 1rem;
+  }
+}
+/* Screen 768px */
+@media screen and (max-width: 769px) {
+  header {
+    height: 90vh;
+  }
+
+  .navigation {
+    max-width: 40rem;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  nav a {
+    font-size: 1.1rem;
+    padding: 0 42px;
+  }
+
+  .btn-on {
+    font-size: 1.5rem;
+    padding: 5px 30px;
+    letter-spacing: 5px;
+  }
+
+  .ordernow-button {
+    top: 65%;
+    left: 26%;
+  }
+
+  .aboutus-container {
+    margin: 6rem 7rem;
+  }
+
+  .aboutus-card {
+    padding: 20px 40px;
+  }
+
+  .aboutus-image img {
+    width: 13rem;
+  }
+
+  .aboutus-text h2 {
+    font-size: 2rem;
+  }
+
+  .aboutus-text p {
+    font-size: .8rem;
+    padding: 2rem 0;
+  }
+
+  .mission-vision-title h1 {
+    font-size: 3.5rem;
+    padding: 5rem 4rem;
+  }
+
+  .mission,
+  .vision {
+    height: 55%;
+  }
+
+  .mission-content,
+  .vision-content {
+    padding: 50px 70px;
+  }
+
+  .mission-content h2,
+  .vision-content h2 {
+    font-size: 2rem;
+  }
+
+  .mission-content p,
+  .vision-content p {
+    font-size: 1rem;
+  }
+
+  .beans-left,
+  .beans-right {
+    max-height: 20%;
+  }
+
+  .leaf-left {
+    top: -10%;
+    left: 1%;
+  }
+
+  .leaf-right {
+    bottom: -1%;
+    right: 3%;
+  }
+
+  .beans-left {
+    bottom: -1%;
+    left: 6%;
+  }
+
+  .beans-right {
+    top: -1%;
+    right: 4%;
+  }
+
+  .whyjb-card {
+    height: 60vh;
+    width: 105vh;
+  }
+
+  .whyjb-text {
+    padding: 3rem;
+  }
+
+  .whyjb-text h2 {
+    font-size: 2rem;
+  }
+
+  .whyjb-text p {
+    font-family: "Roboto", sans-serif;
+    font-size: .9rem;
+  }
+
+  .whyjb-image img {
+    max-width: 130%;
+  }
+
+}
+/* Screen 425px */
+@media (max-width: 450px) {
+  .links-container {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    
+    z-index: 10;
+    width: 300px;
+    background-color: var(--color-1);
+    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.25);
+    /* Adjusted shadow for left slide */
+    transition: 0.75s ease-out;
+  }
+
+  header {
+    height: 70vh;
+    background-image: url('/img/splashpage/splashpage_2.png');
+  }
+
+  .logo {
+    display: none;
+  }
+
+  nav {
+    background-color: transparent;
+  }
+
+  nav a {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    padding: 10px 30px;
+    justify-content: flex-start;
+    margin: 1.5rem 1rem;
+  }
+
+  .placeholder {
+    display: none;
+  }
+
+  .open-sidebar-button {
+    position: absolute;
+    /* Position relative to nav */
+    left: 10px;
+    /* Adjust to your preference */
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    padding: 20px;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 11;
+    /* Ensure it is above the links container */
+  }
+
+  .close-sidebar-button {
+    position: absolute;
+    /* Position relative to nav */
+    left: 20px;
+    /* Align close button to the same position as open button */
+    top: 20px;
+    display: none;
+    padding: 20px;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 11;
+    /* Ensure it is above the links container */
+  }
+
+  #sidebar-active:checked~.links-container {
+    left: 0;
+    /* Changed from right to left */
+  }
+
+  #sidebar-active:checked~#overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+  }
+
+  #sidebar-active:checked~.open-sidebar-button {
+    display: none;
+    /* Hide the open button when sidebar is active */
+  }
+
+  #sidebar-active:checked~.close-sidebar-button {
+    display: block;
+    /* Show the close button when sidebar is active */
+  }
+
+  .arrow {
+    content: url('/img/arrow/arrow-2.png');
+    margin: 0 auto;
+  }
+
+  .ordernow-button {
+    top: 40%;
+    left: 36%;
+  }
+
+  .aboutus-image {
+    content: url('/img/aboutus/aboutus-image2.png');
+  }
+
+  .aboutus-container {
+    margin: 2rem;
+  }
+
+  .aboutus-card {
+    padding: 25px;
+    grid-template-columns: none;
+  }
+
+  .aboutus-image img {
+    width: 13rem;
+  }
+
+  .aboutus-text h2 {
+    font-size: 2rem;
+  }
+
+  .aboutus-text p {
+    font-size: .8rem;
+    padding: 2rem 0;
+  }
+
+  .mission-vision-section {
+    gap: 1.3rem;
+    grid-template-columns: 1fr 1.5fr;
+    margin-top: 2rem;
+  }
+
+  .mission-vision-title h1 {
+    font-size: 1.9rem;
+    padding: 2rem 1rem;
+  }
+
+  .mission,
+  .vision {
+    height: 65%;
+  }
+
+  .mission {
+    margin-top: 6rem;
+  }
+
+  .vision {
+    margin-top: 2rem;
+    width: 60%;
+  }
+
+  .mission-content,
+  .vision-content {
+    padding: 10px 35px;
+  }
+
+  .mission-content h2,
+  .vision-content h2 {
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+  }
+
+  .vision-content h2 {
+    text-align: left;
+  }
+
+  .mission-content p,
+  .vision-content p {
+    font-size: .7rem;
+  }
+
+  .whyjb-section{
+    height: 100vh;
+  }
+  
+  .leaf-left,
+  .leaf-right {
+    max-width: 35%;
+  }
+
+  .beans-left,
+  .beans-right {
+    max-height: 15%;
+  }
+
+  .leaf-left {
+    top: -7%;
+    left: -3%;
+  }
+
+  .leaf-right {
+    bottom: 1%;
+    right: -2%;
+  }
+
+  .beans-left {
+    bottom: 1%;
+    left: 6%;
+  }
+
+  .beans-right {
+    top: -1%;
+    right: 1%;
+  }
+
+  .whyjb-card {
+    height: 89vh;
+    width: 55vh;
+    grid-template-columns: none;
+    grid-template-rows: 1fr .1fr .1fr;
+  }
+
+  .whyjb-text {
+    padding: 2.5rem;
+  }
+
+  .whyjb-image img {
+    content: url('/img/whyjoybubble/whyjoybubble-2.png');
+  }
+}
+/* Screen 375px */
+@media (max-width: 376px) {
+  header {
+    height: 65vh;
+  }
+
+  .btn-on {
+    font-size: 1.1rem;
+    padding: 5px 30px;
+    letter-spacing: 5px;
+  }
+
+  .ordernow-button {
+    top: 38%;
+    left: 36%;
+  }
+
+  .aboutus-container {
+    margin: 6rem 1rem;
+  }
+
+  .aboutus-card {
+    padding: 20px;
+    grid-template-columns: none;
+  }
+
+  .aboutus-image img {
+    width: 10rem;
+  }
+
+  .aboutus-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .aboutus-text p {
+    font-size: .7rem;
+    padding: 2rem 0;
+  }
+
+  .whyjb-card {
+    height: 92vh;
+    width: 50vh;
+    grid-template-rows: 1fr .1fr 11fr;
+  }
+
+  .whyjb-text {
+    padding: 2.5rem;
+  }
+
+  .whyjb-text h2 {
+    font-size: 2rem;
+  }
+
+  .whyjb-text .line-1 {
+    margin-top: .5rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .whyjb-text p {
+    font-family: "Roboto", sans-serif;
+    font-size: .9rem;
+  }
+
+  .whyjb-image img {
+    content: url('/img/whyjoybubble/whyjoybubble-2.png');
+  }
+}
+/* Screen 321px */
+@media (max-width: 321px) {
+  header {
+    height: 55vh;
+  }
+
+  .btn-on {
+    font-size: 1rem;
+    padding: 5px 25px;
+    letter-spacing: 5px;
+  }
+
+  .ordernow-button {
+    top: 33%;
+    left: 36%;
+  }
+
+  .aboutus-image {
+    content: url('/img/aboutus/aboutus-image3.png');
+  }
+
+  .aboutus-container {
+    margin: 5rem 2rem;
+  }
+
+  .aboutus-card {
+    padding: 22px;
+    grid-template-columns: none;
+  }
+
+  .aboutus-image img {
+    width: 10px;
+    height: 10px;
+  }
+
+  .aboutus-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .aboutus-text p {
+    font-size: .8rem;
+    padding: 2rem 0;
+  }
+
+  .mission-vision-title .line-1,
+  .mission-vision-title .line-2 {
+    height: 6px;
+  }
+
+  .mission-vision-section {
+    gap: 1rem;
+    grid-template-columns: 1fr 1.5fr;
+  }
+
+  .mission-vision-title h1 {
+    font-size: 1.2rem;
+    padding: 2rem 1rem;
+  }
+
+  .mission,
+  .vision {
+    height: 55%;
+  }
+
+  .mission {
+    margin-top: 6rem;
+  }
+
+  .vision {
+    margin-top: .5rem;
+    width: 60%;
+  }
+
+  .mission-content,
+  .vision-content {
+    padding: 10px 35px;
+  }
+
+  .mission-content h2,
+  .vision-content h2 {
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+  }
+
+  .vision-content h2 {
+    text-align: left;
+  }
+
+  .mission-content p,
+  .vision-content p {
+    font-size: .5rem;
+  }
+
+  
+  .leaf-left,
+  .leaf-right {
+    max-width: 30%;
+  }
+
+  .beans-left,
+  .beans-right {
+    max-height: 13%;
+  }
+
+  .leaf-left {
+    top: 5%;
+    left: -2%;
+  }
+
+  .leaf-right {
+    bottom: 10%;
+    right: 1%;
+  }
+
+  .beans-left {
+    bottom: 7%;
+    left: 6%;
+  }
+
+  .beans-right {
+    top: 8%;
+    right: 4%;
+  }
+
+  .whyjb-card {
+    height: 89vh;
+    width: 55vh;
+    grid-template-columns: none;
+    grid-template-rows: 1fr .1fr .1fr;
+  }
+
+  .whyjb-text {
+    padding: 2.5rem;
+  }
+
+  .whyjb-card {
+    height: 74vh;
+    width: 40vh;
+    grid-template-rows: .1fr .1fr 1fr;
+  }
+
+  .whyjb-text {
+    padding: 2rem;
+  }
+
+  .whyjb-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .whyjb-text p {
+    font-size: .7rem;
+  }
+
+  .whyjb-image img {
+    content: url('/img/whyjoybubble/whyjoybubble-2.png');
+  }
+}
