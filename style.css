@@ -212,7 +212,7 @@ nav svg {
   position: absolute;
   top: 93%;
   left: 27%;
-  /*transform: translate(-50%, -50%);*/
+  transform: translate(-50%, -50%);
 }
 
 /* Order Now Button Style */
