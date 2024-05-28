@@ -1751,15 +1751,15 @@ footer a {
 
   /* Business Models */
   .titles {
-      font-size: 30px;
+      font-size: 4rem;
   }
 
   p {
-      font-size: 20px;
+      font-size: 1rem;
   }
 
   .model-titles {
-      font-size: 38px;
+      font-size: 2rem;
   }
 
   .info {
@@ -1812,11 +1812,11 @@ footer a {
   }
 
   .btn-vm {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     padding: 5px 35px;
   }
 
   .ci-list a {
-    font-size: 15px;
+    font-size: 1rem;
   }
 }
