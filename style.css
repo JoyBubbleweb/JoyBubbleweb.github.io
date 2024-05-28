@@ -1750,16 +1750,24 @@ footer a {
 @media (max-width: 600px) {
 
   /* Business Models */
-  .titles {
-      font-size: 2rem;
+  .bm-header h1 {
+    font-size: 3rem;
   }
 
-  p {
-      font-size: 0.7rem;
+  .products-header h1 {
+    font-size: 3rem;
+  }
+
+  section p {
+      font-size: 0.9rem;
+  }
+
+  .pd-name {
+    font-size: 2rem;
   }
 
   .model-titles {
-      font-size: 2rem;
+      font-size: 1.6rem;
   }
 
   .info {
@@ -1818,5 +1826,13 @@ footer a {
 
   .ci-list a {
     font-size: 0.7rem;
+  }
+
+  .links-socialmedia i {
+    font-size: 1.2rem;
+  }
+  
+  .links-company-info i {
+    font-size: 1rem;
   }
 }
