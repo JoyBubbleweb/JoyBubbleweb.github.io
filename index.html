@@ -21,9 +21,15 @@
   <!--Custom JS-->
   <script src="script.js" defer></script>
 </head>
+
 <body>
   <!--Back-to-Top Scroll Button-->
   <a href="#" id="scroll" style="display: none;"><span></span></a>
+  <!-- Pop Up Ad -->
+  <div id="popup" class="popup">
+    <span class="close" id="close">&times;</span>
+    <img src="/img/popupad/popupad-lanscape.png" alt="Popup Image" class="popup-content">
+  </div>
   <!-- Splash Screen -->
   <header>
     <!-- Navigation Bar -->
@@ -154,146 +160,147 @@
   <!--Business Models-->
   <section id="bm">
     <div class="bm-header">
-        <h1 class="titles">Business Models</h1>
-        <div class="line-1"></div>
-        <div class="line-2"></div>
+      <h1 class="titles">Business Models</h1>
+      <div class="line-1"></div>
+      <div class="line-2"></div>
     </div>
     <div class="models">
-        <!--BM 1: F&B Trading-->
-        <div class="model model-1">
-            <div class="header-boxes samecolor">
-                <h2 class="model-titles">F&B Trading</h2>
-            </div>
-            <div class="info">
-                <p>Joy Bubble® directly imports, exports and is a stockiest of bubble tea products such as raw
-                    material ingredients of teas, syrups, flavorings and packaging items imported from China,
-                    Taiwan, Vietnam, South Korea and other countries which provides cost reduction for our franchise
-                    partners.</p>
-            </div>
+      <!--BM 1: F&B Trading-->
+      <div class="model model-1">
+        <div class="header-boxes samecolor">
+          <h2 class="model-titles">F&B Trading</h2>
         </div>
-        <!--BM 2: Cafeteria-->
-        <div class="model model-2">
-            <div class="header-boxes diffcolor">
-                <h2 class="model-titles">Cafeteria</h2>
-            </div>
-            <div class="info">
-                <p>Joy Bubble® serves colorful bubble milk teas loved by any nationalities such as signature series,
-                    brulee series, cheesecake or glitter tea series which are uniquely flavored creating sensational
-                    market trends, including korean cuisines, pastas, hot foods, pastries, donuts and many more.</p>
-            </div>
+        <div class="info">
+          <p>Joy Bubble® directly imports, exports and is a stockiest of bubble tea products such as raw
+            material ingredients of teas, syrups, flavorings and packaging items imported from China,
+            Taiwan, Vietnam, South Korea and other countries which provides cost reduction for our franchise
+            partners.</p>
         </div>
-        <!--BM 3: Franchise-->
-        <div class="model model-3">
-            <div class="header-boxes samecolor">
-                <h2 class="model-titles">Franchise</h2>
-            </div>
-            <div class="info">
-                <p>Joy Bubble® grants and supports franchise opportunities to business-minded stakeholders who wants to
-                    replicate its license methods and create a whole new profit stream either as a passive income or a
-                    full-time business venture, locally and<br> internationally.
-                </p>
-            </div>
+      </div>
+      <!--BM 2: Cafeteria-->
+      <div class="model model-2">
+        <div class="header-boxes diffcolor">
+          <h2 class="model-titles">Cafeteria</h2>
         </div>
+        <div class="info">
+          <p>Joy Bubble® serves colorful bubble milk teas loved by any nationalities such as signature series,
+            brulee series, cheesecake or glitter tea series which are uniquely flavored creating sensational
+            market trends, including korean cuisines, pastas, hot foods, pastries, donuts and many more.</p>
+        </div>
+      </div>
+      <!--BM 3: Franchise-->
+      <div class="model model-3">
+        <div class="header-boxes samecolor">
+          <h2 class="model-titles">Franchise</h2>
+        </div>
+        <div class="info">
+          <p>Joy Bubble® grants and supports franchise opportunities to business-minded stakeholders who wants to
+            replicate its license methods and create a whole new profit stream either as a passive income or a
+            full-time business venture, locally and<br> internationally.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!--Grid Gallery-->
   <section id="grid-gallery">
     <div class="gallery-container">
-        <img class="landscape g-1" src="/img/gridgallery/gg_tteokbokki.jpeg" alt="Joy Bubble Tteokbokki"
-            draggable="false">
-        <img class="portrait g-2" src="/img/gridgallery/gg_spf.JPG"
-            alt="Glitter Tea Series - Strawberry Passion Fruit" draggable="false">
-        <img class="landscape g-3" src="img/gridgallery/gg_glittertea.jpeg" alt="Glitter Tea Series Drinks"
-            draggable="false">
-        <img class="portrait g-4" src="/img/gridgallery/gg_corndogs.jpeg" alt="Joy Bubble Corndogs"
-            draggable="false">
-        <img class="portrait g-5" src="/img/gridgallery/gg_mermaid.JPG" alt="Glitter Tea Series - Mermaid Drink"
-            draggable="false">
-        <img class="landscape g-6" src="/img/gridgallery/gg_milktea.jpeg" alt="Joy Bubble Milktea"
-            draggable="false">
-        <img class="portrait g-7" src="/img/gridgallery/gg_matcha.JPG"
-            alt="Glitter Tea Series - Matcha Green Apple" draggable="false">
-        <img class="landscape g-8" src="/img/gridgallery/gg_koreanchicken.jpeg" alt="Korean Chicken"
-            draggable="false">
+      <img class="landscape g-1" src="/img/gridgallery/gg_tteokbokki.jpeg" alt="Joy Bubble Tteokbokki"
+        draggable="false">
+      <img class="portrait g-2" src="/img/gridgallery/gg_spf.JPG" alt="Glitter Tea Series - Strawberry Passion Fruit"
+        draggable="false">
+      <img class="landscape g-3" src="img/gridgallery/gg_glittertea.jpeg" alt="Glitter Tea Series Drinks"
+        draggable="false">
+      <img class="portrait g-4" src="/img/gridgallery/gg_corndogs.jpeg" alt="Joy Bubble Corndogs" draggable="false">
+      <img class="portrait g-5" src="/img/gridgallery/gg_mermaid.JPG" alt="Glitter Tea Series - Mermaid Drink"
+        draggable="false">
+      <img class="landscape g-6" src="/img/gridgallery/gg_milktea.jpeg" alt="Joy Bubble Milktea" draggable="false">
+      <img class="portrait g-7" src="/img/gridgallery/gg_matcha.JPG" alt="Glitter Tea Series - Matcha Green Apple"
+        draggable="false">
+      <img class="landscape g-8" src="/img/gridgallery/gg_koreanchicken.jpeg" alt="Korean Chicken" draggable="false">
     </div>
 
     <div class="popup-img">
-        <span>&times;</span>
-        <img src="/img/gridgallery/gg_tteokbokki.jpeg" alt="Joy Bubble Tteokbokki">
+      <span>&times;</span>
+      <img src="/img/gridgallery/gg_tteokbokki.jpeg" alt="Joy Bubble Tteokbokki">
     </div>
   </section>
 
   <!--Products-->
   <section id="products">
     <div class="products-header">
-        <h1 class="titles pd">Products</h1>
-        <div class="line-1"></div>
-        <div class="line-2"></div>
+      <h1 class="titles pd">Products</h1>
+      <div class="line-1"></div>
+      <div class="line-2"></div>
     </div>
     <div class="product-slider">
-        <ul class="pd-carousel">
-            <!--Donuts-->
-            <li class="card">
-                <div class="img"><img src="/img/productslider/donuts.png" alt="Donuts" draggable="false"></div>
-                <span class="pd-name">Donuts</span>
-            </li>
-            <!--Milk Tea-->
-            <li class="card">
-                <div class="img"><img src="/img/productslider/milktea.png" alt="Milk Tea" draggable="false"></div>
-                <span class="pd-name">Milk Tea</span>
-            </li>
-            <!--Korean Corndog-->
-            <li class="card">
-                <div class="img"><img src="/img/productslider/corndog.png" alt="Korean Corndog" draggable="false"></div>
-                <span class="pd-name">Korean Corndog</span>
-            </li>
-            <!--Smoothie-->
-            <li class="card">
-                <div class="img"><img src="/img/productslider/smoothie.png" alt="Smoothie" draggable="false"></div>
-                <span class="pd-name">Smoothie</span>
-            </li>
-            <!--Bakery Products-->
-            <li class="card">
-                <div class="img"><img src="/img/productslider/bakery-products.png" alt="Bakery Products" draggable="false"></div>
-                <span class="pd-name">Bakery Products</span>
-            </li>
-            <!--Waffles-->
-            <li class="card">
-                <div class="img"><img src="/img/productslider/waffles.png" alt="Waffles" draggable="false"></div>
-                <span class="pd-name">Waffles</span>
-            </li>
-            <!--Korean Chicken-->
-            <li class="card">
-                <div class="img"><img src="/img/productslider/korean-chicken.png" alt="Korean Chicken" draggable="false"></div>
-                <span class="pd-name">Korean Chicken</span>
-            </li>
-            <!--Bubble Soda Pop-->
-            <li class="card">
-                <div class="img"><img src="/img/productslider/bubble-sodapop.png" alt="Bubble Soda Pop" draggable="false"></div>
-                <span class="pd-name">Bubble Soda Pop</span>
-            </li>
-            <!--Pasta-->
-            <li class="card">
-                <div class="img"><img src="/img/productslider/pasta.png" alt="Joy Bubble Pasta" draggable="false"></div>
-                <span class="pd-name">Pasta</span>
-            </li>
-            <!--Egg Drop Sandwiches-->
-            <li class="card">
-                <div class="img"><img src="/img/productslider/egg-drop.png" alt="Egg Drop Sandwiches" draggable="false"></div>
-                <span class="pd-name">Egg Drop Sandwiches</span>
-            </li>
-            <!--Tteokbokki-->
-            <li class="card">
-                <div class="img"><img src="/img/productslider/tteokbokki.png" alt="Tteokbokki" draggable="false"></div>
-                <span class="pd-name">Tteokbokki</span>
-            </li>
-            <!--Glitter Tea Series-->
-            <li class="card">
-                <div class="img"><img src="/img/productslider/glitter-tea.png" alt="Glitter Tea Series" draggable="false"></div>
-                <span class="pd-name">Glitter Tea Series</span>
-            </li>
-        </ul>
+      <ul class="pd-carousel">
+        <!--Donuts-->
+        <li class="card">
+          <div class="img"><img src="/img/productslider/donuts.png" alt="Donuts" draggable="false"></div>
+          <span class="pd-name">Donuts</span>
+        </li>
+        <!--Milk Tea-->
+        <li class="card">
+          <div class="img"><img src="/img/productslider/milktea.png" alt="Milk Tea" draggable="false"></div>
+          <span class="pd-name">Milk Tea</span>
+        </li>
+        <!--Korean Corndog-->
+        <li class="card">
+          <div class="img"><img src="/img/productslider/corndog.png" alt="Korean Corndog" draggable="false"></div>
+          <span class="pd-name">Korean Corndog</span>
+        </li>
+        <!--Smoothie-->
+        <li class="card">
+          <div class="img"><img src="/img/productslider/smoothie.png" alt="Smoothie" draggable="false"></div>
+          <span class="pd-name">Smoothie</span>
+        </li>
+        <!--Bakery Products-->
+        <li class="card">
+          <div class="img"><img src="/img/productslider/bakery-products.png" alt="Bakery Products" draggable="false">
+          </div>
+          <span class="pd-name">Bakery Products</span>
+        </li>
+        <!--Waffles-->
+        <li class="card">
+          <div class="img"><img src="/img/productslider/waffles.png" alt="Waffles" draggable="false"></div>
+          <span class="pd-name">Waffles</span>
+        </li>
+        <!--Korean Chicken-->
+        <li class="card">
+          <div class="img"><img src="/img/productslider/korean-chicken.png" alt="Korean Chicken" draggable="false">
+          </div>
+          <span class="pd-name">Korean Chicken</span>
+        </li>
+        <!--Bubble Soda Pop-->
+        <li class="card">
+          <div class="img"><img src="/img/productslider/bubble-sodapop.png" alt="Bubble Soda Pop" draggable="false">
+          </div>
+          <span class="pd-name">Bubble Soda Pop</span>
+        </li>
+        <!--Pasta-->
+        <li class="card">
+          <div class="img"><img src="/img/productslider/pasta.png" alt="Joy Bubble Pasta" draggable="false"></div>
+          <span class="pd-name">Pasta</span>
+        </li>
+        <!--Egg Drop Sandwiches-->
+        <li class="card">
+          <div class="img"><img src="/img/productslider/egg-drop.png" alt="Egg Drop Sandwiches" draggable="false"></div>
+          <span class="pd-name">Egg Drop Sandwiches</span>
+        </li>
+        <!--Tteokbokki-->
+        <li class="card">
+          <div class="img"><img src="/img/productslider/tteokbokki.png" alt="Tteokbokki" draggable="false"></div>
+          <span class="pd-name">Tteokbokki</span>
+        </li>
+        <!--Glitter Tea Series-->
+        <li class="card">
+          <div class="img"><img src="/img/productslider/glitter-tea.png" alt="Glitter Tea Series" draggable="false">
+          </div>
+          <span class="pd-name">Glitter Tea Series</span>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -301,28 +308,36 @@
   <div class="viewmenu-button">
     <a class="btn-vm" href="/Joy Bubble Menu/milk-tea.html">View Menu</a>
   </div>
-  
+
   <!--Footer-->
   <footer id="footer">
     <div class="footer-grid-container">
-        <div class="footer-logo">
-            <img src="/img/joybubble-logo.png" alt="Joy Bubble Logo-Footer">
+      <div class="footer-logo">
+        <img src="/img/joybubble-logo.png" alt="Joy Bubble Logo-Footer">
+      </div>
+      <div class="footer-links">
+        <div class="links-company-info">
+          <div class="ci-list">
+            <a href="https://myjoybubble.com/" target=”_blank” class="ci-1"><i
+                class="fa fa-thin fa-globe">&nbsp;&nbsp;</i>www.myjoybubble.com</a>
+            <a href="tel:tel:+9714 255 0527" target=”_blank” class="ci-2"><i
+                class="fa-solid fa-phone">&nbsp;&nbsp;</i>+971 (0) 4 255 0527</a>
+            <a href="mailto:info@myjoybubble.com" target=”_blank” class="ci-3"><i
+                class="fa-regular fa-envelope">&nbsp;&nbsp;</i>info@myjoybubble.com</a>
+            <a href="https://maps.app.goo.gl/5e55cMHkio6VVjwJ6" target=”_blank” class="ci-4"><i
+                class="fa-solid fa-location-dot">&nbsp;&nbsp;&nbsp;</i>Shop #5, Bin Demaithan Bldg.11<br>Al Qusais
+              Industrial Area 2</a>
+          </div>
         </div>
-        <div class="footer-links">
-            <div class="links-company-info">
-                <div class="ci-list">
-                    <a href="https://myjoybubble.com/" target=”_blank” class="ci-1"><i class="fa fa-thin fa-globe">&nbsp;&nbsp;</i>www.myjoybubble.com</a>
-                    <a href="tel:tel:+9714 255 0527" target=”_blank” class="ci-2"><i class="fa-solid fa-phone">&nbsp;&nbsp;</i>+971 (0) 4 255 0527</a>
-                    <a href="mailto:info@myjoybubble.com" target=”_blank” class="ci-3"><i class="fa-regular fa-envelope">&nbsp;&nbsp;</i>info@myjoybubble.com</a>
-                    <a href="https://maps.app.goo.gl/5e55cMHkio6VVjwJ6" target=”_blank” class="ci-4"><i class="fa-solid fa-location-dot">&nbsp;&nbsp;&nbsp;</i>Shop #5, Bin Demaithan Bldg.11<br>Al Qusais Industrial Area 2</a>
-                </div>
-            </div>
-            <div class="links-socialmedia">
-                <a href="https://www.facebook.com/joybubblemilktea" target=”_blank” class="sm-1"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="https://www.instagram.com/joybubblemilktea/" target=”_blank” class="sm-2"><i class="fa-brands fa-instagram"></i></a>
-            </div>
+        <div class="links-socialmedia">
+          <a href="https://www.facebook.com/joybubblemilktea" target=”_blank” class="sm-1"><i
+              class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://www.instagram.com/joybubblemilktea/" target=”_blank” class="sm-2"><i
+              class="fa-brands fa-instagram"></i></a>
         </div>
+      </div>
     </div>
   </footer>
 </body>
+
 </html>
