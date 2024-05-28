@@ -1681,15 +1681,15 @@ footer a {
 @media (max-width: 600px) {
   /* Business Models */
   .titles {
-      font-size: 30px;
+      font-size: 40px;
   }
 
   p {
-      font-size: 20px;
+      font-size: 17px;
   }
 
   .model-titles {
-      font-size: 38px;
+      font-size: 25px;
   }
 
   .info {
@@ -1743,5 +1743,9 @@ footer a {
   .btn-vm {
       font-size: 1.8rem;
       padding: 5px 35px;
+  }
+
+  .ci-list a {
+    font-size: 15px;
   }
 }
