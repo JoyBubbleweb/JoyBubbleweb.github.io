@@ -1034,7 +1034,7 @@ footer a {
   }
 
   header {
-    height: 70vh;
+    height: 50vh;
     background-image: url('/img/splashpage/splashscreen-mobile.png');
   }
 
@@ -1210,7 +1210,7 @@ footer a {
 /* Screen 375px */
 @media (max-width: 376px) {
   header {
-    height: 65vh;
+    height: 40vh;
   }
 
   .btn-on {
@@ -1219,10 +1219,10 @@ footer a {
     letter-spacing: 5px;
   }
 
-  /* .ordernow-button {
-    top: 38%;
-    left: 36%;
-  } */
+  .btn-on {
+    margin-top: 30px;
+  }
+
 
   .aboutus-card {
     max-width: 15rem;
@@ -1252,8 +1252,12 @@ footer a {
 
   /* Order Now */
   .ordernow-button {
-    top: 95%;
+    top: 34%;
     left: 27%;
+  }
+
+  .btn-on {
+    margin-top: 30px;
   }
 
   header {
@@ -1439,6 +1443,10 @@ footer a {
 /* Mobile (440px) */
 @media (max-width: 600px) {
 
+  .btn-on {
+    margin-top: 30px;
+  }
+
   /* Business Models */
   .bm-header h1 {
     font-size: 3rem;
@@ -1470,8 +1478,12 @@ footer a {
 
   /* Grid Gallery */
   #grid-gallery {
-    margin-top: 150px;
-    margin-bottom: 110px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  #products {
+    margin-top: 100px;
   }
 
   /* Gallery Image Pop up */
