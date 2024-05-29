@@ -447,6 +447,12 @@ section p {
   color: #323232;
 }
 
+section .cta {
+  font-family: "Roboto", sans-serif;
+  font-size: 23px;
+  color: #1a39a9;
+}
+
 .titles {
   color: #1E1E1E;
   font-size: 5rem;
