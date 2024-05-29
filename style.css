@@ -1350,6 +1350,10 @@ footer a {
     font-size: 26px;
   }
 
+  section .cta {
+    font-size: 26px;
+  }
+
   .model-titles {
     font-size: 45px;
   }
@@ -1443,6 +1447,10 @@ footer a {
   }
 
   section p {
+    font-size: 0.9rem;
+  }
+
+  section .cta {
     font-size: 0.9rem;
   }
 
