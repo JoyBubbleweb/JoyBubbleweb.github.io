@@ -1215,10 +1215,10 @@ footer a {
     letter-spacing: 5px;
   }
 
-  /* .ordernow-button {
-    top: 38%;
-    left: 36%;
-  } */
+  .btn-on {
+    margin-top: 30px;
+  }
+
 
   .aboutus-container {
     margin: 6rem 1rem;
@@ -1251,6 +1251,10 @@ footer a {
   .ordernow-button {
     top: 50%;
     left: 27%;
+  }
+
+  .btn-on {
+    margin-top: 30px;
   }
 
   header {
@@ -1436,6 +1440,10 @@ footer a {
 
 /* Mobile (440px) */
 @media (max-width: 600px) {
+
+  .btn-on {
+    margin-top: 30px;
+  }
 
   /* Business Models */
   .bm-header h1 {
