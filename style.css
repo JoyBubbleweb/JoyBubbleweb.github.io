@@ -119,13 +119,13 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 135vh;
 }
 
 /* Navigation Bar */
 .navigation {
   max-width: 68rem;
   margin: 0 auto;
+  height: 135vh;
 }
 
 /* Nav */
@@ -251,18 +251,23 @@ nav svg {
   justify-content: center;
   /* Center horizontally */
   align-items: center;
+  background-color: #FFF0D9;
 }
 
 /* About Us Section*/
 .aboutus-section {
   background-image: url('/img/aboutus/aboutuspage.png');
   height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* About Us Container */
 .aboutus-container {
-  margin: 6rem 21rem;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* About Us Card */
@@ -270,6 +275,8 @@ nav svg {
   background-color: white;
   border-radius: 16px;
   padding: 30px 45px;
+  max-height: 30rem;
+  max-width: 50rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
@@ -874,8 +881,8 @@ footer a {
     left: 30%;
   }
 
-  .aboutus-container {
-    margin: 6rem 13rem;
+  .aboutus-card{
+    max-width: 35rem;
   }
 
   .aboutus-image img {
@@ -951,12 +958,8 @@ footer a {
     left: 26%;
   }
 
-  .aboutus-container {
-    margin: 6rem 7rem;
-  }
-
   .aboutus-card {
-    padding: 20px 40px;
+    max-width: 30rem;
   }
 
   .aboutus-image img {
@@ -1110,8 +1113,15 @@ footer a {
   }
 
   .arrow {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF0D9;
+  }
+  .arrow img{
+    width: 30px;
     content: url('/img/arrow/arrow-2.png');
-    margin: 0 auto;
   }
 
   .ordernow-button {
@@ -1119,21 +1129,15 @@ footer a {
     left: 36%;
   }
 
-  .aboutus-image {
-    content: url('/img/aboutus/aboutus-image2.png');
-  }
-
-  .aboutus-container {
-    margin: 2rem;
-  }
-
   .aboutus-card {
-    padding: 25px;
+    max-width: 16rem;
     grid-template-columns: none;
+    padding: 25px 35px;
   }
 
   .aboutus-image img {
-    width: 13rem;
+    width: 17rem;
+    content: url('/img/aboutus/aboutus-image2.png');
   }
 
   .aboutus-text h2 {
@@ -1220,17 +1224,16 @@ footer a {
     left: 36%;
   } */
 
-  .aboutus-container {
-    margin: 6rem 1rem;
-  }
-
   .aboutus-card {
-    padding: 20px;
+    max-width: 15rem;
     grid-template-columns: none;
+    padding: 25px 35px;
+    overflow: hidden;
   }
 
   .aboutus-image img {
-    width: 10rem;
+    width: 15rem;
+    content: url('/img/aboutus/aboutus-image2.png');
   }
 
   .aboutus-text h2 {
@@ -1238,7 +1241,7 @@ footer a {
   }
 
   .aboutus-text p {
-    font-size: .7rem;
+    font-size: .8rem;
     padding: 2rem 0;
   }
 
@@ -1263,12 +1266,11 @@ footer a {
     letter-spacing: 5px;
   }
 
-  .aboutus-image {
-    content: url('/img/aboutus/aboutus-image3.png');
-  }
-
-  .aboutus-container {
-    margin: 5rem 2rem;
+  .aboutus-card {
+    max-width: 12rem;
+    grid-template-columns: none;
+    padding: 25px 35px;
+    overflow: hidden;
   }
 
   .aboutus-card {
@@ -1277,8 +1279,8 @@ footer a {
   }
 
   .aboutus-image img {
-    width: 10px;
-    height: 10px;
+    width: 12rem;
+    content: url('/img/aboutus/aboutus-image3.png');
   }
 
   .aboutus-text h2 {
@@ -1286,8 +1288,8 @@ footer a {
   }
 
   .aboutus-text p {
-    font-size: .8rem;
-    padding: 2rem 0;
+    font-size: .7rem;
+    padding: 1rem 0;
   }
 
   .mission-vision-title .line-1,
