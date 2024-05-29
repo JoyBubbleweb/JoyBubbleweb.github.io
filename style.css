@@ -1468,8 +1468,12 @@ footer a {
 
   /* Grid Gallery */
   #grid-gallery {
-    margin-top: 150px;
-    margin-bottom: 110px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  #products {
+    margin-top: 100px;
   }
 
   /* Gallery Image Pop up */
