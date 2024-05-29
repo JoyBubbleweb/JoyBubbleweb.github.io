@@ -1192,14 +1192,14 @@ footer a {
 
   .whyjb-section {
     height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .whyjb-img img {
     content: url('/img/whyjoybubble/whyjb-phone.png');
     max-width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
 
