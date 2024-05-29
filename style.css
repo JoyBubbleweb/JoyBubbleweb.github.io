@@ -115,7 +115,7 @@ html {
 
 /* Splash Screen - Header */
 header {
-  background-image: url('/img/splashpage/splashpage_1.png');
+  background-image: url('/img/splashpage/splashscreen-laptop.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -209,10 +209,10 @@ nav svg {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 93%;
-  left: 27%;
-  transform: translate(-50%, -50%);
+  background-color: #FFF0D9;
+}
+.ordernow-button a{
+  margin: 0 5rem 3rem;
 }
 
 /* Order Now Button Style */
@@ -876,11 +876,6 @@ footer a {
     padding: 0 55px;
   }
 
-  .ordernow-button {
-    top: 76%;
-    left: 30%;
-  }
-
   .aboutus-card{
     max-width: 35rem;
   }
@@ -953,16 +948,6 @@ footer a {
     padding: 5px 30px;
     letter-spacing: 5px;
   }
-
-  .ordernow-button {
-    top: 65%;
-    left: 26%;
-  }
-
-  .btn-on {
-    margin-top: 20px;
-  }
-
   .aboutus-card {
     max-width: 30rem;
   }
@@ -1128,12 +1113,6 @@ footer a {
     width: 30px;
     content: url('/img/arrow/arrow-2.png');
   }
-
-  .ordernow-button {
-    top: 40%;
-    left: 36%;
-  }
-
   .aboutus-card {
     max-width: 16rem;
     grid-template-columns: none;
@@ -1256,10 +1235,6 @@ footer a {
 @media (max-width: 321px) {
 
   /* Order Now */
-  .ordernow-button {
-    top: 34%;
-    left: 27%;
-  }
 
   .btn-on {
     margin-top: 30px;
